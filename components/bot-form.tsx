@@ -85,7 +85,16 @@ export const BotForm: FC = () => {
           {completionResult.content ? (
             <>
               <p style={{ textAlign: "center" }}>生成した答え</p>
-              <pre>{completionResult.content}</pre>
+              <pre
+                style={{
+                  fontSize: "1.25rem",
+                  lineHeight: 2,
+                  padding: ".5rem",
+                  textWrap: "wrap",
+                }}
+              >
+                {completionResult.content}
+              </pre>
               <br />
               <p>生成に利用した政策内容</p>
               <div
